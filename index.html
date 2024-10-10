@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -49,11 +50,44 @@
     <section class="card" id="css-section">
       <h2>CSS</h2>
       <ul>
-        <li>Enter your CSS notes here</li>
+        <li>Cascading Style Sheets (CSS) is a programming language to define how webpage content is presented to the user.</li>
+        <li>A margin indecates how much space we want around the outside of an element. The margin property acts much lie a margin in a word processing doc.</li>
+        <li>A padding indicates how much space we want around the content inside an element. When you increase padding, you are actually making the entire element bigger. That is because the padding while transparent, is located inside the element, whereas the margin is the transparent buffer outside element.</li>
+        <li>There are 3 ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
+        <li>When you want to style an element directly in the HTML file, they use inline CSS.</li>
+        <li>Ex. of inline CSS is using the style attribute to change the color of a single h1 heading.</li>
+        <li>A single change to the CSS rule will apply to all tagged page elements.</li>
+        <li>The internal style sheet contains CSS rules for a webpage in the head section of the HTML file.</li>
+        <li>Although inline CSS and internal style sheets are acceptable, the most common way to style a webpage is by using an external CSS style sheet, which allows developers to keep all of their CSS rules in a seperate file.</li>
+        <li>When using an external style sheet, we link the file with changes using a link element placed in the HTML head. In this ex we put it after the meta and before the title.</li>
+        <li>Seperation of concerns- widely used term that refers to seperating code into different files based on use.</li>
+        <li>To create a new feature branch use following git commands: git status, git checkout main, git checkout -b feature/add-css.</li>
+        <li> When breaking down a CSS rule, there is first a selector that defines the element or attribute to which the tules or declarations will apply</li>
+        <li>Declarations contain 2 important components: the CSS property we want to apply, and the value of said property</li>
+        <li>The CSS Box model teaches about content box, padding, border, and margin and how they interact with one another</li>
+        <li>Content box: the area where your content is displayed; size it using properties like inline-size and block-size or width and height</li>
+        <li>Padding box: the padding sits around the content as white space; size it using padding and related properties</li>
+        <li>Border box: the border box wraps the content and any padding; size it using border and related properties</li>
+        <li>Margin box: the outermost layer, wrapping the content, padding and border as whitespace between this box and other elements; size it using margin and related properties</li>
+        <li>In order to apply a rule to all the elements visible on the page use "*"</li>
+        <li>You can combine 2 selectors into a single CSS rule with a comma, allowing the declaration to affect both selectors</li>
+        <li>DRY- Don't Repeat Yourself- coding principle that encourages develpers to combine steps in order to reduce the number of lines used in code</li>
+        <li>The img selector assigns property values to any image element in the markup</li>
+        <li>The display property is assigned with the block value which assigns each image to start on a new line</li>
+        <li>Must format lists and p text in order to center all text and size the font</li>
+        <li>In order to link new changes, go back to main file, and add link to head</li>
+        <li>Used link rel="stylesheet" href="./assets/style.css" to add our changes</li>
+        <li>Link- a link element creates the connection to the external file</li>
+        <li>The rel attribute specifies the relationship between the current doc and the linked doc resource</li>
+        <li>The href attribute specifies the location (URL) of the external resource. The href attribute is using a relative path. This means the location is derived from the current location (in this case index.html). To locate the style sheet from the current location we must look in the assets, hence the assets/style.css</li>
+        <li>Class attributes will allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector</li>
+        <li>To differenciate topics, we added box-shadows around each note topics, to keep it visually appealing as well as organized</li>
+        <li>To add shadow boxes we used ".card" to apply the box to all topics</li>
+        <li>When selecting colors for elements of your webpage, we use an HTML hexadecimal code to define each color. This just means that there is a corosponding color for each and every specific shade</li>
       </ul>
     </section>
     <section class="card" id="git-section">
-      <h2>Git</h2>
+      <h2>Git</h2> 
       <ul>
         <li>GitHub allows multiple people to make changes to a program at the same time</li>
         <li>Repository or "repo"- This is a folder for your projects that contain all files and their revision history</li>
